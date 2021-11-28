@@ -1,0 +1,42 @@
+version: '3.1'
+services:
+  #PHP Service
+  nginx:
+    image: nginx:latest
+    ports:
+    - "80:80"
+    - "443:443"
+    volumes:
+    - ./nginx/hosts:/etc/nginx/conf.d
+    - ./../public:/var/www/html/public:cached
+    - ./nginx/logs:/var/log/nginx
+    links:
+      - php
+  php:
+    build: ./php
+    links:
+      - postgrsql
+      - redis
+    volumes:
+      - ./../:/var/www/html
+  postgrsql:
+    image: postgres
+    ports:
+    - "5432:5432"
+    environment:
+        - POSTGRES_PASSWORD=460626OkEy!
+        - POSTGRES_USER=Edward
+        - POSTGRES_DB=yugid
+    expose:
+      - "5432"
+  redis:
+    image: redis:latest
+    volumes:
+    - ./redis/etc/redis.conf:/usr/local/etc/redis/redis.conf
+    - ./redis/data:/opt/redis/data
+    - ./redis/data/bases:/opt/redis/data/bases
+    - ./redis/logs:/opt/redis/logs/
+    ports:
+    - "6379:6379"
+    expose:
+      - "6379"
