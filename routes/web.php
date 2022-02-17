@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MainController;
+use App\Http\Middleware\CachingMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +14,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('http',[MainController::class,'http'])->name('http');
+Route::get('serviceProvider',[MainController::class,'serviceProvider'])->name('serviceProvider');
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });

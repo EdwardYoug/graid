@@ -2,28 +2,28 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class ModifyBeheaverHttp extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register services.
      *
      * @return void
      */
     public function register()
     {
-        //
+        $this->app->bind('\Psr\Http\Client\ClientInterface','App\Http\Services\TestService1');
+
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap services.
      *
      * @return void
      */
     public function boot()
     {
-
+        //
     }
 }

@@ -2,6 +2,8 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CachingMiddleware;
+use App\Http\Middleware\LogMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -14,6 +16,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
+        LogMiddleware::class,  //<-- Любой запрос к приложению
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
         \Fruitcake\Cors\HandleCors::class,
@@ -21,6 +24,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        LogMiddleware::class,  //<-- запрос до рутинга
     ];
 
     /**
@@ -30,13 +34,17 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
+            CachingMiddleware::class, //<--простой http-кэш, который работая с memcached, отрабатывает до роутинга, но не кэширует никакие статусы кроме успешных (200).
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
+            LogMiddleware::class,  //<-- до старта сессии
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
+            LogMiddleware::class, //<-- После проверки токена
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+
         ],
 
         'api' => [

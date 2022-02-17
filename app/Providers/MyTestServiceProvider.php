@@ -2,28 +2,27 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class MyTestServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register services.
      *
      * @return void
      */
     public function register()
     {
-        //
+        $this->app->bind('App\Http\Interfaces\TestServiceInterface', 'App\Http\Services\TestService');
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap services.
      *
      * @return void
      */
     public function boot()
     {
-
+        //
     }
 }
