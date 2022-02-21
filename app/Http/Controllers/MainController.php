@@ -10,7 +10,7 @@ class MainController extends Controller
 
     public function serviceProvider(TestServiceInterface $service)
     {
-        dd($service->test());
+        echo $service->test();
     }
 
     public function http()

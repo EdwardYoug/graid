@@ -7,7 +7,7 @@ class TestService implements \App\Http\Interfaces\TestServiceInterface
 
     public function test()
     {
-        return 'tewreewrest';
+        return 'Метод экземпляра класса, соответствующего интерфейсу';
     }
 
     public function get()
