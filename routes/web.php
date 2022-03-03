@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\CrudController;
 use App\Http\Controllers\MainController;
 use App\Http\Middleware\CachingMiddleware;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +25,7 @@ Route::get('/', function () {
 
 
 Route::group(['prefix' => 'admin'], function () {
+    Route::resource('crud',CrudController::class);
+
     Voyager::routes();
 });

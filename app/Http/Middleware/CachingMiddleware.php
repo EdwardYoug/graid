@@ -3,16 +3,10 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use http\Exception\RuntimeException;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Http\Response as IlluminateResponse;
-use Illuminate\Routing\Route;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
-use phpDocumentor\Reflection\DocBlock\Tags\Throws;
-use Spatie\ResponseCache\Exceptions\CouldNotUnserialize;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -38,9 +32,10 @@ class CachingMiddleware
         if (Cache::store('memcached')->get($request->route()->uri())) {
             return $this->unserialize(Cache::store('memcached')->get($request->route()->uri()));
         }
+
         $response = $next($request);
         if ($response->getStatusCode() === 200) {
-            sleep(5);
+            //sleep(5);
             Cache::store('memcached')->Forever($request->route()->uri(), $this->serialize($response));
 
         }

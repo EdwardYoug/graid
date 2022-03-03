@@ -34,7 +34,7 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            CachingMiddleware::class, //<--простой http-кэш, который работая с memcached, отрабатывает до роутинга, но не кэширует никакие статусы кроме успешных (200).
+           // CachingMiddleware::class, //<--простой http-кэш, который работая с memcached, отрабатывает до роутинга, но не кэширует никакие статусы кроме успешных (200).
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,

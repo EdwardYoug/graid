@@ -28,6 +28,7 @@ return [
 
     'controllers' => [
         'namespace' => 'TCG\\Voyager\\Http\\Controllers',
+        'customNamespace' => 'Http\\Controllers\\Admin',
     ],
 
     /*
@@ -144,7 +145,10 @@ return [
         ],
 
         'widgets' => [
-
+            \TCG\Voyager\Widgets\PageDimmer::class,
+            \TCG\Voyager\Widgets\UserDimmer::class,
+            \TCG\Voyager\Widgets\UserDimmer::class,
+            \TCG\Voyager\Widgets\UserDimmer::class,
         ],
 
     ],

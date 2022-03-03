@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PostsMigration extends Migration
+class City extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class PostsMigration extends Migration
      */
     public function up()
     {
-        Schema::create('posts1', function (Blueprint $table){
+        Schema::create('cities', function (Blueprint $table){
            $table->id();
-           $table->string('title');
-           $table->text('content');
+           $table->string('title')->nullable();
         });
     }
 

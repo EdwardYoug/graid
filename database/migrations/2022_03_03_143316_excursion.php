@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PostsMigration extends Migration
+class Excursion extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,17 @@ class PostsMigration extends Migration
      */
     public function up()
     {
-        Schema::create('posts1', function (Blueprint $table){
+        Schema::create('excursion',function (Blueprint $table){
            $table->id();
-           $table->string('title');
-           $table->text('content');
+           $table->bigInteger('city')->index()->unsigned();
+           $table->string('title')->nullable();
+
+           $table->foreign('city')
+               ->references('id')
+               ->on('cities')
+               ->cascadeOnUpdate()
+               ->cascadeOnDelete();
+
         });
     }
 

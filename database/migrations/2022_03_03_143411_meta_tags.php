@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PostsMigration extends Migration
+class MetaTags extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class PostsMigration extends Migration
      */
     public function up()
     {
-        Schema::create('posts1', function (Blueprint $table){
-           $table->id();
-           $table->string('title');
-           $table->text('content');
+        Schema::create('meta',function (Blueprint $table){
+            $table->id();
+            $table->morphs('owner');
+            $table->string('key');
+            $table->text('value');
+            $table->timestamps();
         });
     }
 

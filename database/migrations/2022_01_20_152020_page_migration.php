@@ -13,7 +13,7 @@ class PageMigration extends Migration
      */
     public function up()
     {
-        Schema::create('pages', function (Blueprint $table){
+        Schema::create('pages1', function (Blueprint $table){
            $table->id();
            $table->text('content');
         });
