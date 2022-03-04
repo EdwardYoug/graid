@@ -2806,3 +2806,210 @@
 2022/03/03 14:18:27 [warn] 23#23: *14 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.20.0.1, server: , request: "GET /admin/voyager-assets?path=images%2Fwidget-backgrounds%2F03.jpg HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
 2022/03/03 14:18:31 [crit] 23#23: *16 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/crud"
 2022/03/03 14:18:31 [crit] 23#23: *16 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/crud"
+2022/03/03 15:10:49 [crit] 23#23: *21 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/users"
+2022/03/03 15:10:49 [crit] 23#23: *21 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/users"
+2022/03/03 15:10:49 [warn] 23#23: *20 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 172.20.0.1, server: , request: "GET /admin/voyager-assets?path=js%2Fapp.js HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost", referrer: "http://localhost/admin/users"
+2022/03/03 15:38:49 [warn] 23#23: *25 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/4/00/0000000004 while reading upstream, client: 172.20.0.1, server: , request: "GET /admin/crud HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost", referrer: "http://localhost/admin/users"
+2022/03/03 15:41:04 [warn] 22#22: *30 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/5/00/0000000005 while reading upstream, client: 172.20.0.1, server: , request: "GET /admin/crud HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost", referrer: "http://localhost/admin/users"
+2022/03/03 15:41:47 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:41:47 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:42:19 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/create"
+2022/03/03 15:42:19 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/create"
+2022/03/03 15:43:14 [warn] 22#22: *30 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/6/00/0000000006 while reading upstream, client: 172.20.0.1, server: , request: "POST /admin/bread HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost", referrer: "http://localhost/admin/bread/cities/create"
+2022/03/03 15:43:50 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:43:50 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:43:55 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:43:55 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:44:32 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:44:32 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:45:11 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:45:11 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:45:40 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:45:40 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:45:45 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/create"
+2022/03/03 15:45:45 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/create"
+2022/03/03 15:45:59 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:45:59 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:46:07 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/blog/create"
+2022/03/03 15:46:07 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/blog/create"
+2022/03/03 15:46:21 [warn] 22#22: *30 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/7/00/0000000007 while reading upstream, client: 172.20.0.1, server: , request: "POST /admin/bread HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost", referrer: "http://localhost/admin/bread/blog/create"
+2022/03/03 15:46:33 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:46:33 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:46:36 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/meta/create"
+2022/03/03 15:46:36 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/meta/create"
+2022/03/03 15:47:06 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:47:06 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:47:10 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:47:10 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:47:27 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:47:27 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 15:48:10 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:48:10 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:48:20 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/edit"
+2022/03/03 15:48:20 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/edit"
+2022/03/03 15:48:48 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/edit"
+2022/03/03 15:48:48 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/edit"
+2022/03/03 15:49:04 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:49:04 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 15:49:17 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/meta"
+2022/03/03 15:49:17 [crit] 22#22: *30 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.20.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/meta"
+2022/03/03 15:56:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/03/03 15:56:19 [notice] 22#22: gracefully shutting down
+2022/03/03 15:56:19 [notice] 23#23: gracefully shutting down
+2022/03/03 15:56:19 [notice] 22#22: exiting
+2022/03/03 15:56:19 [notice] 24#24: gracefully shutting down
+2022/03/03 15:56:19 [notice] 23#23: exiting
+2022/03/03 15:56:19 [notice] 24#24: exiting
+2022/03/03 15:56:19 [notice] 22#22: exit
+2022/03/03 15:56:19 [notice] 23#23: exit
+2022/03/03 15:56:19 [notice] 24#24: exit
+2022/03/03 15:56:19 [notice] 25#25: gracefully shutting down
+2022/03/03 15:56:19 [notice] 25#25: exiting
+2022/03/03 15:56:19 [notice] 25#25: exit
+2022/03/03 15:56:20 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/03/03 15:56:20 [notice] 1#1: worker process 23 exited with code 0
+2022/03/03 15:56:20 [notice] 1#1: signal 29 (SIGIO) received
+2022/03/03 15:56:20 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/03/03 15:56:20 [notice] 1#1: worker process 24 exited with code 0
+2022/03/03 15:56:20 [notice] 1#1: signal 29 (SIGIO) received
+2022/03/03 15:56:20 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/03/03 15:56:20 [notice] 1#1: worker process 25 exited with code 0
+2022/03/03 15:56:20 [notice] 1#1: signal 29 (SIGIO) received
+2022/03/03 15:56:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/03/03 15:56:20 [notice] 1#1: worker process 22 exited with code 0
+2022/03/03 15:56:20 [notice] 1#1: exit
+2022/03/03 15:56:29 [notice] 1#1: using the "epoll" event method
+2022/03/03 15:56:29 [notice] 1#1: nginx/1.21.4
+2022/03/03 15:56:29 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/03/03 15:56:29 [notice] 1#1: OS: Linux 5.13.0-30-generic
+2022/03/03 15:56:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/03/03 15:56:29 [notice] 1#1: start worker processes
+2022/03/03 15:56:29 [notice] 1#1: start worker process 22
+2022/03/03 15:56:29 [notice] 1#1: start worker process 23
+2022/03/03 15:56:29 [notice] 1#1: start worker process 24
+2022/03/03 15:56:29 [notice] 1#1: start worker process 25
+2022/03/03 16:01:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/03/03 16:01:20 [notice] 22#22: gracefully shutting down
+2022/03/03 16:01:20 [notice] 24#24: gracefully shutting down
+2022/03/03 16:01:20 [notice] 24#24: exiting
+2022/03/03 16:01:20 [notice] 22#22: exiting
+2022/03/03 16:01:20 [notice] 24#24: exit
+2022/03/03 16:01:20 [notice] 22#22: exit
+2022/03/03 16:01:20 [notice] 23#23: gracefully shutting down
+2022/03/03 16:01:20 [notice] 23#23: exiting
+2022/03/03 16:01:20 [notice] 23#23: exit
+2022/03/03 16:01:20 [notice] 25#25: gracefully shutting down
+2022/03/03 16:01:20 [notice] 25#25: exiting
+2022/03/03 16:01:20 [notice] 25#25: exit
+2022/03/03 16:01:20 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/03/03 16:01:20 [notice] 1#1: worker process 23 exited with code 0
+2022/03/03 16:01:20 [notice] 1#1: worker process 24 exited with code 0
+2022/03/03 16:01:20 [notice] 1#1: signal 29 (SIGIO) received
+2022/03/03 16:01:20 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/03/03 16:01:20 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/03/03 16:01:20 [notice] 1#1: worker process 25 exited with code 0
+2022/03/03 16:01:20 [notice] 1#1: signal 29 (SIGIO) received
+2022/03/03 16:01:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/03/03 16:01:20 [notice] 1#1: worker process 22 exited with code 0
+2022/03/03 16:01:20 [notice] 1#1: exit
+2022/03/03 16:01:31 [notice] 1#1: using the "epoll" event method
+2022/03/03 16:01:31 [notice] 1#1: nginx/1.21.4
+2022/03/03 16:01:31 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/03/03 16:01:31 [notice] 1#1: OS: Linux 5.13.0-30-generic
+2022/03/03 16:01:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/03/03 16:01:31 [notice] 1#1: start worker processes
+2022/03/03 16:01:31 [notice] 1#1: start worker process 22
+2022/03/03 16:01:31 [notice] 1#1: start worker process 23
+2022/03/03 16:01:31 [notice] 1#1: start worker process 24
+2022/03/03 16:01:31 [notice] 1#1: start worker process 25
+2022/03/03 16:01:35 [warn] 22#22: *4 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.21.0.1, server: , request: "GET /admin HTTP/1.1", upstream: "fastcgi://172.21.0.5:9000", host: "localhost"
+2022/03/03 16:03:08 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin"
+2022/03/03 16:03:08 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin"
+2022/03/03 16:03:19 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/settings"
+2022/03/03 16:03:19 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/settings"
+2022/03/03 16:03:37 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/categories"
+2022/03/03 16:03:37 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/categories"
+2022/03/03 16:03:43 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:03:43 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:03:50 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/create"
+2022/03/03 16:03:50 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/create"
+2022/03/03 16:04:15 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:04:15 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:04:19 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/create"
+2022/03/03 16:04:19 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/excursion/create"
+2022/03/03 16:04:36 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:04:36 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:04:46 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/blog/create"
+2022/03/03 16:04:46 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/blog/create"
+2022/03/03 16:05:08 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:05:08 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:05:10 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/meta/create"
+2022/03/03 16:05:10 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/meta/create"
+2022/03/03 16:05:45 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:05:45 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:05:58 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:05:58 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:06:22 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:06:22 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:06:56 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:06:56 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:07:51 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:07:51 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:08:23 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:08:23 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:09:48 [warn] 22#22: *4 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.21.0.1, server: , request: "POST /admin/bread/7 HTTP/1.1", upstream: "fastcgi://172.21.0.5:9000", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:09:57 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:09:57 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:10:04 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:10:04 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:10:59 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:10:59 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:11:04 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:11:04 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:11:10 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:11:10 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:11:12 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:11:12 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:11:37 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:11:37 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:11:45 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities"
+2022/03/03 16:11:45 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities"
+2022/03/03 16:11:58 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities/create"
+2022/03/03 16:11:58 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities/create"
+2022/03/03 16:12:05 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities"
+2022/03/03 16:12:05 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities"
+2022/03/03 16:12:11 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities/1/edit"
+2022/03/03 16:12:11 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities/1/edit"
+2022/03/03 16:12:17 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities/1"
+2022/03/03 16:12:17 [crit] 22#22: *4 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities/1"
+2022/03/03 16:12:19 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities"
+2022/03/03 16:12:19 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/cities"
+2022/03/03 16:12:34 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/excursion"
+2022/03/03 16:12:34 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/excursion"
+2022/03/03 16:12:37 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:12:37 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread"
+2022/03/03 16:12:40 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:12:40 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:13:39 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:13:39 [crit] 22#22: *112 stat() "/var/www/html/public/storage/users/default.png" failed (13: Permission denied), client: 172.21.0.1, server: , request: "GET /storage/users/default.png HTTP/1.1", host: "localhost", referrer: "http://localhost/admin/bread/cities/edit"
+2022/03/03 16:16:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/03/03 16:16:14 [notice] 23#23: gracefully shutting down
+2022/03/03 16:16:14 [notice] 24#24: gracefully shutting down
+2022/03/03 16:16:14 [notice] 23#23: exiting
+2022/03/03 16:16:14 [notice] 24#24: exiting
+2022/03/03 16:16:14 [notice] 23#23: exit
+2022/03/03 16:16:14 [notice] 24#24: exit
+2022/03/03 16:16:14 [notice] 25#25: gracefully shutting down
+2022/03/03 16:16:14 [notice] 25#25: exiting
+2022/03/03 16:16:14 [notice] 25#25: exit
+2022/03/03 16:16:14 [notice] 22#22: gracefully shutting down
+2022/03/03 16:16:14 [notice] 22#22: exiting
+2022/03/03 16:16:14 [notice] 22#22: exit
+2022/03/03 16:16:14 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/03/03 16:16:14 [notice] 1#1: worker process 23 exited with code 0
+2022/03/03 16:16:14 [notice] 1#1: worker process 24 exited with code 0
+2022/03/03 16:16:14 [notice] 1#1: worker process 25 exited with code 0
+2022/03/03 16:16:14 [notice] 1#1: signal 29 (SIGIO) received
+2022/03/03 16:16:14 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/03/03 16:16:14 [notice] 1#1: worker process 22 exited with code 0
+2022/03/03 16:16:14 [notice] 1#1: exit

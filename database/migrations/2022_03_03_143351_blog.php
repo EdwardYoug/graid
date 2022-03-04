@@ -17,6 +17,7 @@ class Blog extends Migration
             $table->id();
             $table->bigInteger('city')->index()->unsigned();
             $table->string('title')->nullable();
+            $table->timestamps();
 
             $table->foreign('city')
                 ->references('id')

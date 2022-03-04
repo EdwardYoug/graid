@@ -3,17 +3,35 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\City;
 use Illuminate\Http\Request;
+use TCG\Voyager\Facades\Voyager;
 
 class CrudController extends Controller
 {
+    public function getSlug(Request $request)
+    {
+        if (isset($this->slug)) {
+            $slug = $this->slug;
+        } else {
+            $slug = explode('.', $request->route()->getName())[1];
+        }
+
+        return $slug;
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        // GET THE SLUG, ex. 'posts', 'pages', etc.
+        $slug = $this->getSlug($request);
+
+        // GET THE DataType based on the slug
+        $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
+        dd($dataType);
         return view('admin.crud.form');
     }
 
