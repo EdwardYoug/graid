@@ -29,6 +29,10 @@ class CachingMiddleware
             throw new HttpException(400,'bad равен 1');
         }
 
+        if ($request->method() !='GET') {
+            return $next($request);
+        }
+
         if (Cache::store('memcached')->get($request->route()->uri())) {
             return $this->unserialize(Cache::store('memcached')->get($request->route()->uri()));
         }
@@ -37,7 +41,6 @@ class CachingMiddleware
         if ($response->getStatusCode() === 200) {
             //sleep(5);
             Cache::store('memcached')->Forever($request->route()->uri(), $this->serialize($response));
-
         }
         return $response;
     }
